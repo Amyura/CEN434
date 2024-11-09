@@ -1,0 +1,213 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #fff;
+    padding: 0;
+}
+
+.header {
+    background-image: url("travel1\ cover.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #008080;
+        padding: 10px 0;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    margin: 0%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.intro{
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+}
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.mylife {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.section2 {
+    text-align: center;
+    background-color: #008080;   
+     border: 3px solid #fff;
+    border-radius: 10px;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.section2 p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.divsection2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divsection2 div {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.divsection2 img {
+    width: 100%;
+    
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.divsection2 a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+}
+
+.firstdiv, .card {
+    background-color: #008080;    padding: 20px;
+    border-radius: 10px;
+}
+
+.firstdiv {
+    flex: 2;
+    min-width: 300px;
+    border: 3px solid #fff;
+}
+
+.card {
+    flex: 1;
+    max-width: 400px;
+    height: 520px;
+    border: 3px solid #fff;
+}
+
+.seconddiv img, .thirddiv img, .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.seconddiv h3 a, .thirddiv h3 a ,.card a{
+    text-decoration: none;
+    color: black;
+} 
+.card a{
+    text-decoration: none;
+    color: #fff;
+   
+} 
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(86, 250, 234);
+    color: black;
+    border: 3px solid #fff;
+    border-left: none;
+    border-right: none;
+    background-color: #008080;
+    border-radius: 10px;
+
+}
+
+.line-input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px;
+    background-color:#fff;
+    width: 200px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(86, 250, 234);}
+.social-icons {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p, .section2 p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .maindiv {
+        flex-direction: column;
+    }
+}

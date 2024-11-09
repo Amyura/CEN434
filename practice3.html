@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    <h1>Javascript Practice</h1>
+    <h3 id="result"> </h3>
+    <h3 id="factorial"></h3>
+    <h3 id="combination"></h3>
+    <p ></p>
+   <script type="text/javascript">
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum = a.reduce((acc, value) => acc + value, 0);
+let average = sum / a.length;
+
+console.log("The Average is :", average);
+document.getElementById("result").textContent=`The Average is of an array A : ${average}`;
+
+console.log('Factorial of last 2 digits of matric number')
+function factorialBigInt(n){
+    let result=BigInt(1);
+    for(let i=2; i<=n; i++){
+        result *=BigInt(i);
+    }
+    return result;
+}
+console.log('The factorial of the last 2 digits of my matric number is', factorialBigInt(50));
+document.getElementById("factorial").textContent=`Factorial of last 2 digits of matric number (50) : ${factorialBigInt(50).toString()}`;
+
+function factorial(n) {
+    if (n === 0 || n === 1) return 1;  
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+function combination(n, k) {
+   
+    return factorial(n) / (factorial(k) * factorial(n - k));
+}
+
+function calculateCombination(x, y) {
+    if (x > y) {
+        return `x combination y (C(${x}, ${y})) = ${combination(x, y).toString()}`;
+    } else {
+        return `y combination x (C(${y}, ${x})) = ${combination(y, x).toString()}`;
+    }
+}
+let x=5;
+let y=10;
+console.log(calculateCombination(x, y)); 
+console.log(calculateCombination(y, x));  
+document.getElementById("combination").textContent=`The combination of X and Y is  : ${calculateCombination(x, y)}`
+   </script> 
+</body>
+</html>
